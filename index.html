@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+
+
+
+
+
+
+<header class="ui middle aligned center aligned stackable grid segment">
+
+  <div class="seven wide center aligned column">
+    <h2 class="headder"> WIT ICT Skills Studio 2017</h2>
+    <p>  </p>
+  </div>
+
+  
+<div class="four wide column">
+  <div class="ui center aligned mini message segment">
+    Department of Computing & Mathematics, WIT.
+    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank">Creative Commons License
+    </a>
+  </div>
+</div>
+
+
+</header>
+
+
+
+
+
+<div class="ui raised stackable segment container">
+  <a class="ui blue left ribbon large label">Workshops</a>
+  <div class="ui centered stackable cards">
+    
+    
+<div class="ui raised link card">
+  <div class="content">
+    <div class="right floated meta"><i class="sitemap large icon"></i></div>
+    <div class="header">  Web Application Development Using Glitch</div>
+  </div>
+  
+    <a href="./glitch-course-web/index.html">
+      
+      <div class="image">
+        <img class="ui bordered rounded image" src="./glitch-course-web/course.png">
+      </div>
+    </a>
+    <div class="content">
+      <div class="description">
+        <p>A short course exploring Javsscript Web Application development using the Glitch service. The course will introduce the fundamentals of javascript use this knowledge learn the structure of Web Applications in Node and Express.</p>
+
+      </div>
+    </div>
+  </a>
+  
+  <div class="extra content center aligned">
+    Eamonn de Leastar
+  </div>
+  
+  
+  <div class="extra content center aligned">
+    <a href=https://gitter.im/wit-ictskills-studio-2017/glitch target="_blank">
+      <img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg">
+    </a>
+  </div>
+  
+</div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
